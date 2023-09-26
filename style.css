@@ -1,0 +1,51 @@
+body{
+    background:url(img/background2.jpg) no-repeat center center fixed;
+    background-repeat:no-repeat;
+    background-size: cover; /* que el background agafi tota la pantalla */
+    font-family: Arial, sans-serif; /* Que la lletra sigui arial, si no trobe la lletra arial al pc agafe la serif */
+}
+
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+
+#about{
+    text-align: center;
+    color: whitesmoke;
+}
+
+#repositories{
+    color: whitesmoke;
+}
+
+#contactame{
+    text-align: left;
+    color: whitesmoke;
+    margin-top: 150px; /* ajustar per a ficar el contactame mes abaix */
+}
+
+#foto_perfil {
+    display: block; /* Cambia a un elemento de bloque para centrarlo verticalmente */
+    margin: 0 auto; /* Establece los márgenes automáticos para centrarlo horizontalmente */
+    border-radius: 50%; /* foto circular */
+    border: 3px solid #333; /* Bodre a la imatge */
+}
+
+a{ /* els links en blau cel */
+    color: aqua;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    text-align: right;
+    font-size: medium;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
