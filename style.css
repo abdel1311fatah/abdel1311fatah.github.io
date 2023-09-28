@@ -33,6 +33,10 @@ body {
     background-image: url(img/White_Background2.jpg);
 }
 
+.projectes{
+    background-image: url(img/White_Background3.jpg);
+}
+
 .photo {
     margin-left: 0 auto;
     border-radius: 10rem;
@@ -154,6 +158,13 @@ body {
     font-size: 16px;
     /* Cambia el tamaño del texto según tus preferencias */
     text-align: center;
+}
+
+footer {
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    padding: 10px;
 }
 
 .flex-container {
