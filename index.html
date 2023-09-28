@@ -1,166 +1,174 @@
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link href="img/f1.jpg" rel="icon">
-        <link href="style.css" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="img/f1.jpg" rel="icon">
+    <link href="style.css" rel="stylesheet">
+</head>
 
-    <body>
-        <header>
-            <div class="flex-container">
-                <h1 class="Nom_header">Abel Ibarra</h1>
+<body>
+    <header>
+        <div class="flex-container">
+            <h1 class="Nom_header">Abel Ibarra</h1>
+        </div>
+        <nav class="flex-container" id="menu">
+            <div>
+                <a href="#menu">
+                    <h2 style="color: burlywood;">Menu</h2>
+                </a>
             </div>
-            <nav class="flex-container" id="menu">
-                <div>
-                    <a href="#menu"><h2 style="color: burlywood;">Menu</h2></a>
-                </div>
-                <div>
-                    <a href="#about_me"><h2 style="color: burlywood;">About me</h2></a>
-                </div>
-                <div>
-                    <a href="#projectes"><h2 style="color: burlywood;">Projects</h2></a>
-                </div>
-                <div>
-                    <a href="#skills"><h2 style="color: burlywood;">Skills</h2></a>
-                </div>
-                <div>
-                    <a href="#contact"><h2 style="color: burlywood;">Contact me</h2></a>
-                </div>
-            </nav>
-        </header>
-        <br><br>
-        <section class="about_me" id="about_me">
-            <div class="Titol_about_me">
-                <h2>About me</h2>
+            <div>
+                <a href="#about_me">
+                    <h2 style="color: burlywood;">About me</h2>
+                </a>
             </div>
-            <div class="about_me_content">
-                <div class="photo">
-                    <img src="img/f1.jpg" alt="Foto introductoria del perfil">
-                </div>
-                <div class="texte">
-                   <h3>I'm a student From La Salle Mollerussa and java developer.<br> 
+            <div>
+                <a href="#projectes">
+                    <h2 style="color: burlywood;">Projects</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#skills">
+                    <h2 style="color: burlywood;">Skills</h2>
+                </a>
+            </div>
+            <div>
+                <a href="#contact_me">
+                    <h2 style="color: burlywood;">Contact me</h2>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="about_me default-section bg-light" id="about_me">
+        <div class="section-title">
+            <h2>About me</h2>
+            <br>
+        </div>
+        <div class="about_me_content">
+            <div >
+                <img class="photo" src="img/f1.jpg" alt="Foto introductoria del perfil">
+            </div>
+            <div class="texte">
+                <h3>I'm a student From La Salle Mollerussa and java developer.<br>
                     I know HTML, CSS and SQL.<br>
                     The past year I did a module for Odoo.</h3>
-                    <!-- els &nbsp;&nbsp;&nbsp;&nbsp; son espais en blanc -->
+                <!-- els &nbsp;&nbsp;&nbsp;&nbsp; son espais en blanc -->
+            </div>
+        </div>
+    </section>
+
+    <section class="projectes default-section bg-dark" id="projectes">
+        <div class="section-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="caixes_projectes">
+            <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
+            <div class="card">
+                <img class="card1_photo" src="img/customer_directory.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="Titol_customer_directory"><b>Customer
+                            Directory</b></h4>
+                    <p>Java program with no db connection that allows you to
+                        create, update, delete, and search
+                        customers, it has low validations for the customers
+                        atributes.<br>
+                        <a href="https://github.com/abdel1311fatah/customer-directory">Link
+                            to the repository</a>
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <br>
-
-        <section class="projectes" id="projectes">
-            <div class="Titol_repositories">
-                <h2>Repositories</h2>
-            </div>
-            <div class="caixes_projectes">
-                <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
-                <div class="card">
-                    <img class="card1_photo" src="img/customer_directory.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="Titol_customer_directory"><b>Customer
-                                Directory</b></h4>
-                        <p>Java program with no db connection that allows you to
-                            create, update, delete, and search
-                            customers, it has low validations for the customers
-                            atributes.<br>
-                            <a href="https://github.com/abdel1311fatah/customer-directory">Link
-                                to the repository</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card2_photo" src="img/cmd_java.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="Titol_CMD_intellij"><b>Cmd Java</b></h4>
-                        <p>A CMD with limited operations made with java. It only
-                            works with absolute routes and olny with
-                            these operations: CD, MKDIR, DIR, DEL, RENAME, and
-                            EXIT. <br>
-                            <a href="https://github.com/abdel1311fatah/CMD_Intellij_M6_UF1">Link
-                                to the repository</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card3_photo" src="img/dices_game.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="Titol_joc_daus"><b>Dices game in Java</b></h4>
-                        <p>A Java program that rolls 2 dice, adds the 2 dice and
-                            repeats the
-                            process
-                            as many times as you have entered by keyboard, then
-                            counts with asterisks the number of
-                            times each number appears.<br>
-                            <a href="https://github.com/abdel1311fatah/Practica_Daus_Roura">Link
-                                to the repository</a>
-                        </p>
-                    </div>
+            <div class="card">
+                <img class="card2_photo" src="img/cmd_java.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="Titol_CMD_intellij"><b>Cmd Java</b></h4>
+                    <p>A CMD with limited operations made with java. It only
+                        works with absolute routes and olny with
+                        these operations: CD, MKDIR, DIR, DEL, RENAME, and
+                        EXIT. <br>
+                        <a href="https://github.com/abdel1311fatah/CMD_Intellij_M6_UF1">Link
+                            to the repository</a>
+                    </p>
                 </div>
             </div>
-
-        </section>
-
-        <br>
-
-        <section class="skills" id="skills">
-
-            <div class="Titol_skills">
-                <h2>Skills</h2>
-            </div>
-            <div class="caixes_skills">
-                <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
-                <div class="card">
-                    <img class="Logo_java" src="img/Java-Logo.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="Carta_java"><b>JAVA</b></h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="Logo_html" src="img/Html-Logo.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="HTML"><b>HTML</b></h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="Logo_css" src="img/Css_logo.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="CSS"><b>CSS</b></h4>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="Logo_sql" src="img/Sql_logo.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4 class="CSS"><b>SQL</b></h4>
-                    </div>
+            <div class="card">
+                <img class="card3_photo" src="img/dices_game.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="Titol_joc_daus"><b>Dices game in Java</b></h4>
+                    <p>A Java program that rolls 2 dice, adds the 2 dice and
+                        repeats the
+                        process
+                        as many times as you have entered by keyboard, then
+                        counts with asterisks the number of
+                        times each number appears.<br>
+                        <a href="https://github.com/abdel1311fatah/Practica_Daus_Roura">Link
+                            to the repository</a>
+                    </p>
                 </div>
             </div>
+        </div>
 
-        </section>
-        <section class="contact_me" id="contact_me">
-            <div class="Titol_contact_me">
-                <h2>About me</h2>
-            </div>
-            <div class="contact_me_content">
-                <div class="photo">
-                    <img src="img/f1.jpg" alt="Foto introductoria del perfil">
+    </section>
+
+    <section class="skills default-section bg-light" id="skills">
+
+        <div class="section-title">
+            <h2>Skills</h2>
+        </div>
+        <div class="caixes_skills">
+            <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
+            <div class="card">
+                <img class="Logo_java" src="img/Java-Logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="Carta_java"><b>JAVA</b></h4>
                 </div>
-                <div class="texte_contact_me">
-                   <h3 class="texte_contact_me">You can find me at LaSalle Mollerussa at Carrer de Ferrer i 
-                    Busquets, 17, 25230 Mollerussa, Lleida<br> 
+            </div>
+            <div class="card">
+                <img class="Logo_html" src="img/Html-Logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="HTML"><b>HTML</b></h4>
+                </div>
+            </div>
+            <div class="card">
+                <img class="Logo_css" src="img/Css_logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="CSS"><b>CSS</b></h4>
+                </div>
+            </div>
+            <div class="card">
+                <img class="Logo_sql" src="img/Sql_logo.png" alt="Avatar" style="width:100%">
+                <div class="container">
+                    <h4 class="CSS"><b>SQL</b></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="contact_me default-section bg-dark" id="contact_me">
+        <div class="section-title">
+            <h2>Contact me</h2>
+        </div>
+        <div class="contact_me_content">
+            <div class="contact_me_content-map">
+                <img class= "map" src="img/mapa_lasalle.png" alt="Foto mapa de la salle">
+            </div>
+            <div class="contact_me_content-text">
+                <h3 class="texte_contact_me">You can find me at: <br> LaSalle Mollerussa at Carrer de Ferrer i
+                    Busquets <br> 17, 25230 Mollerussa, Lleida<br>
                     +34 695 44 99 35.<br>
                     abel13ibarra@gmail.com</h3>
-                    <!-- els &nbsp;&nbsp;&nbsp;&nbsp; son espais en blanc -->
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <p>Abel Ibarra - &copy; 2023</p>
-        </footer>
+    <footer>
+        <p>Abel Ibarra - &copy; 2023</p>
+    </footer>
 
-    </body>
+</body>
 
 </html>
