@@ -4,32 +4,35 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="icon" href="img/f1.jpg">
-        <link rel="stylesheet" href="style.css">
+        <link href="img/f1.jpg" rel="icon">
+        <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <div class="name">
+            <div class="flex-container">
                 <h1 class="Nom_header">Abel Ibarra</h1>
             </div>
-            <nav class="menu">
+            <nav class="flex-container" id="menu">
+                <div>
+                    <a href="#menu"><h2 style="color: burlywood;">Menu</h2></a>
+                </div>
                 <div>
                     <a href="#about_me"><h2 style="color: burlywood;">About me</h2></a>
                 </div>
                 <div>
-                    <a href="#projectes"><h2 style="color: burlywood;">Projects</style></h2></a>
-                </div>
-                <div >
-                    <a href="#skills"><h2 style="color: burlywood;">Skills</style></h2></a>
+                    <a href="#projectes"><h2 style="color: burlywood;">Projects</h2></a>
                 </div>
                 <div>
-                    <a href="#contact"><h2 style="color: burlywood;">Contact me</style></h2></a>
+                    <a href="#skills"><h2 style="color: burlywood;">Skills</h2></a>
+                </div>
+                <div>
+                    <a href="#contact"><h2 style="color: burlywood;">Contact me</h2></a>
                 </div>
             </nav>
         </header>
         <br><br>
-        <section class="about_me">
+        <section class="about_me" id="about_me">
             <div class="Titol_about_me">
                 <h2>About me</h2>
             </div>
@@ -38,8 +41,9 @@
                     <img src="img/f1.jpg" alt="Foto introductoria del perfil">
                 </div>
                 <div class="texte">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm
-                    a student From La Salle Mollerussa
+                   <h3>I'm a student From La Salle Mollerussa and java developer.<br> 
+                    I know HTML, CSS and SQL.<br>
+                    The past year I did a module for Odoo.</h3>
                     <!-- els &nbsp;&nbsp;&nbsp;&nbsp; son espais en blanc -->
                 </div>
             </div>
@@ -47,15 +51,14 @@
 
         <br>
 
-        <section class="projectes">
+        <section class="projectes" id="projectes">
             <div class="Titol_repositories">
                 <h2>Repositories</h2>
             </div>
             <div class="caixes_projectes">
                 <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
                 <div class="card">
-                    <img src="img/customer_directory.png" alt="Avatar"
-                        style="width:100%" class="card1_photo">
+                    <img class="card1_photo" src="img/customer_directory.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="Titol_customer_directory"><b>Customer
                                 Directory</b></h4>
@@ -63,30 +66,26 @@
                             create, update, delete, and search
                             customers, it has low validations for the customers
                             atributes.<br>
-                            <a
-                                href="https://github.com/abdel1311fatah/customer-directory">Link
+                            <a href="https://github.com/abdel1311fatah/customer-directory">Link
                                 to the repository</a>
                         </p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/cmd_java.png" alt="Avatar" style="width:100%"
-                        class="card2_photo">
+                    <img class="card2_photo" src="img/cmd_java.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="Titol_CMD_intellij"><b>Cmd Java</b></h4>
                         <p>A CMD with limited operations made with java. It only
                             works with absolute routes and olny with
                             these operations: CD, MKDIR, DIR, DEL, RENAME, and
                             EXIT. <br>
-                            <a
-                                href="https://github.com/abdel1311fatah/CMD_Intellij_M6_UF1">Link
+                            <a href="https://github.com/abdel1311fatah/CMD_Intellij_M6_UF1">Link
                                 to the repository</a>
                         </p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="img/dices_game.png" alt="Avatar"
-                        style="width:100%" class="card3_photo">
+                    <img class="card3_photo" src="img/dices_game.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="Titol_joc_daus"><b>Dices game in Java</b></h4>
                         <p>A Java program that rolls 2 dice, adds the 2 dice and
@@ -95,8 +94,7 @@
                             as many times as you have entered by keyboard, then
                             counts with asterisks the number of
                             times each number appears.<br>
-                            <a
-                                href="https://github.com/abdel1311fatah/Practica_Daus_Roura">Link
+                            <a href="https://github.com/abdel1311fatah/Practica_Daus_Roura">Link
                                 to the repository</a>
                         </p>
                     </div>
@@ -107,34 +105,56 @@
 
         <br>
 
-        <section class="skills">
+        <section class="skills" id="skills">
 
             <div class="Titol_skills">
                 <h2>Skills</h2>
             </div>
             <div class="caixes_skills">
                 <!-- https://www.w3schools.com/howto/howto_css_cards.asp targetes-->
-                <div class="card4">
-                    <img src="img/Java-Logo.png" alt="Avatar"
-                        style="width:100%" class="Logo_java">
+                <div class="card">
+                    <img class="Logo_java" src="img/Java-Logo.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="Carta_java"><b>JAVA</b></h4>
                     </div>
                 </div>
-                <div class="card5">
-                    <img src="img/Html-Logo.png" alt="Avatar" style="width:100%" class="Logo_html">
+                <div class="card">
+                    <img class="Logo_html" src="img/Html-Logo.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="HTML"><b>HTML</b></h4>
                     </div>
                 </div>
-                <div class="card6">
-                    <img src="img/Css_logo.png" alt="Avatar" style="width:100%" class="Logo_css">
+                <div class="card">
+                    <img class="Logo_css" src="img/Css_logo.png" alt="Avatar" style="width:100%">
                     <div class="container">
                         <h4 class="CSS"><b>CSS</b></h4>
                     </div>
                 </div>
+                <div class="card">
+                    <img class="Logo_sql" src="img/Sql_logo.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4 class="CSS"><b>SQL</b></h4>
+                    </div>
+                </div>
             </div>
 
+        </section>
+        <section class="contact_me" id="contact_me">
+            <div class="Titol_contact_me">
+                <h2>About me</h2>
+            </div>
+            <div class="contact_me_content">
+                <div class="photo">
+                    <img src="img/f1.jpg" alt="Foto introductoria del perfil">
+                </div>
+                <div class="texte_contact_me">
+                   <h3 class="texte_contact_me">You can find me at LaSalle Mollerussa at Carrer de Ferrer i 
+                    Busquets, 17, 25230 Mollerussa, Lleida<br> 
+                    +34 695 44 99 35.<br>
+                    abel13ibarra@gmail.com</h3>
+                    <!-- els &nbsp;&nbsp;&nbsp;&nbsp; son espais en blanc -->
+                </div>
+            </div>
         </section>
 
     </body>
