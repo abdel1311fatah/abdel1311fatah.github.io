@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif; 
-} /* Treure els bordes i ficar lletra tipo lato */
+    font-family: 'Lato', sans-serif;
+}
 
-body {
+/* Treure els bordes i ficar lletra tipo lato */
+
+body { /* Backgrounds per defecte */
     background-color: #F7F2E9;
 }
 
@@ -13,31 +15,35 @@ body {
 }
 
 .bg-dark {
-    background-color:#C9BB9F ;    
+    background-color: #C9BB9F;
 }
 
-.default-section { /* Titul de les seccions */
+.default-section {
+    /* Titul de les seccions */
     padding: 32px 64px;
     min-height: 450px;
 }
 
-.section-title{ /* Tituls de les seccions */
+.section-title {
+    /* Tituls de les seccions, a 16 px del fondo */
     margin-bottom: 16px;
 }
 
-.map{
-    width: 100%;
+.map {
+    width: 100%; /* li done una amplada del 100 % al mapa de la salle */
 }
 
-.photo_and_name {
+.photo_and_name { /* fa la foto i el nom flexibles */
     display: flex;
 }
 
-.name { /* el nom en gran */
+.name {
+    /* el nom al centre */
     text-align: center;
 }
 
-.photo { /* la foto del sallenet */
+.photo {
+    /*fa redona la foto, estableix el marge de l esquerra a 0, i li done una amplada de 250px */
     border-radius: 50%;
     margin-left: 0;
     width: 250px;
@@ -47,17 +53,19 @@ body {
     display: flex;
     align-items: center;
 
-    @media (max-width: 992px) { /* fa de if, si la pantalla te menys de 992 pixels fique el contingut en columna */
+    @media (max-width: 992px) {
+        /* fa de if, si la pantalla te menys de 992 pixels fique el contingut en columna */
         flex-direction: column;
     }
 }
 
-.texte { /* la descripcio del about me */
+.texte {
+    /* la descripcio del about me */
     margin-left: auto;
     text-align: end;
 }
 
-.texte_contact_me{
+.texte_contact_me {
     margin-left: auto;
     text-align: end;
 }
@@ -65,7 +73,8 @@ body {
 .caixes_projectes {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* els hi done espai igual entre elles */
+    justify-content: space-around;
+    /* els hi done espai igual entre elles */
 
     @media (max-width: 769px) {
         flex-direction: column;
@@ -138,14 +147,17 @@ body {
     text-align: center;
 }
 
-footer { /* lo del copy */
+footer {
+    /* lo del copy */
     background-color: gray;
-    color: black; /* color de la lletra */ 
+    color: black;
+    /* color de la lletra */
     text-align: center;
     padding: 10px;
 }
 
-.flex-container { /* per al nom i el menu */
+.flex-container {
+    /* per al nom i el menu */
     display: flex;
     justify-content: space-around;
     display: flex;
@@ -160,12 +172,13 @@ footer { /* lo del copy */
     justify-content: space-between;
 
     @media (max-width: 992px) {
-            flex-direction: column;
+        flex-direction: column;
     }
 }
 
 .contact_me_content-map {
-    flex: 1 1 50%; /* el primer numero es un flex grow, si necessite ferse mes gran es podra fer mes gran, el segon numero es un flex-shrink, fa lo mateix pero en petit, i el 50 % 
+    flex: 1 1 50%;
+    /* el primer numero es un flex grow, si necessite ferse mes gran es podra fer mes gran, el segon numero es un flex-shrink, fa lo mateix pero en petit, i el 50 % 
     fa que inicialment la imatge ocupi un 50 % */
 }
 
@@ -173,7 +186,9 @@ footer { /* lo del copy */
     flex: 1 1 50%;
 }
 
-@media (max-width: 992px) { /* Si la pantalla fa menys de 992 de pixels fique la pagina en columna */ 
+@media (max-width: 992px) {
+
+    /* Si la pantalla fa menys de 992 de pixels fique la pagina en columna */
     .flex-container {
         flex-direction: column;
     }
